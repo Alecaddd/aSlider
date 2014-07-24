@@ -1,0 +1,77 @@
+/* basic css style */
+html,
+body {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 200;
+	font-size: 21px;
+	background: #f5f5f5 url('http://api.thumbr.it/whitenoise-361x370.png?background=f5f5f5ff&noise=626262&density=7&opacity=6') repeat;
+	color: #3a3a3a;
+}
+
+body {
+	padding-bottom: 80px;
+}
+
+h1, 
+h2 {
+	text-align: center;
+}
+
+a,
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+a, 
+a:visited {color: #528FB1;text-decoration: none;}
+a:hover, 
+a:focus {text-decoration: none;color: #196f9d;}
+
+h1.page-title {
+	font-size: 65px;
+	font-weight: 200;
+	color: #528FB1;
+	margin-bottom: 10px;
+	margin-top: 0;
+	text-shadow: 0 1px 1px #fff;
+}
+
+h2.page-description {
+	font-size: 19px;
+	font-weight: 200;
+	font-style: italic;
+	color: #919191;
+	margin-top: -5px;
+}
+
+.foot {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	padding: 10px 0 0;
+}
+
+.foot .fa {
+	font-size: 14px;
+}
+
+a.btn.btn-github {
+	color: #6F6F6F;
+	background: #E4E4E4;
+	font-size: 13px;
+	padding: 5px 6px;
+	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+a.btn.btn-github:hover {
+	color: #E4E4E4;
+	background: #6F6F6F;
+	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.7);
+}
