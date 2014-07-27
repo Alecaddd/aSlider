@@ -14,7 +14,7 @@ Super light and fully Responsive jQuery slider
 
 ### IE support
 
-Sorry, obsolete browser like IE 6,7 and 8 are not supported
+Sorry, obsolete browsers like IE 6,7 and 8 are not supported
 
 #### Help
 

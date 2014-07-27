@@ -9,7 +9,8 @@ body {
 }
 
 body {
-	padding-bottom: 80px;
+	padding: 0;
+	margin: 0;
 }
 
 h1, 
@@ -45,20 +46,17 @@ h2.page-description {
 	margin-top: -5px;
 }
 
-.foot {
+.footer {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 300;
-	display: block;
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	background: #fff;
 	padding: 10px 0 0;
+	/* width: 100%; */
+	margin-top: 20px;
 }
 
-.foot .fa {
+.footer .fa {
 	font-size: 14px;
 }
 
@@ -74,4 +72,54 @@ a.btn.btn-github:hover {
 	color: #E4E4E4;
 	background: #6F6F6F;
 	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* flex magic tricks */
+
+body {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	
+	-webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+	align-items: stretch;
+	
+	min-height: 100vh;
+}
+
+aside.header {
+	-webkit-flex: 0 1 auto;
+	-moz-flex:  0 1 auto;
+	flex: 0 1 auto;
+}
+
+aside.aslider-container {
+	-webkit-flex: 1 1 auto;
+	-moz-flex:  1 1 auto;
+	flex: 1 1 auto;
+}
+
+footer.footer {
+	-webkit-flex: 0 1 auto;
+	-moz-flex:  0 1 auto;
+	flex: 0 1 auto;
+}
+
+/*
+    Legacy Firefox implementation treats all flex containers
+    as inline-block elements.
+*/
+
+@-moz-document url-prefix() {
+body {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    }
+
 }
