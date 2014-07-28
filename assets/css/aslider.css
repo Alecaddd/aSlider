@@ -86,3 +86,8 @@
 	MEDIA QUERIES
 	---------------------------------------------------
 */
+
+@media(max-width:720px){
+	.slide img {height: 100%;height:calc(100% + 30px);width: auto;}
+	.slide-preview {height: 100%;width: auto;}
+}
